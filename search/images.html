@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Ted Pieplow">
+        <!-- Set viewport width-->
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <!-- Link to CSS -->
+        <link rel="stylesheet" href="styles.css" />
+        <!-- Link to Font Awesome Library, getting the magnifying glass for the search field -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <title>Image Search</title>
+    </head>
+    <body>
+        <div class="content">
+            <div class="header">
+                <div class="header-links">
+                    <a href="index.html">Google Search</a>
+                    <a href="advanced.html">Advanced Search</a>        
+                </div>
+            </div>
+            <div class="search-div">
+                <div class="img"><img src="https://www.google.se/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" height="92" width="272"></div>
+                <span class="span-image">Images</span>
+                <form action="https://www.google.com/images" method="get">
+                    <div class="input-group">
+                        <input id="search" type="text" name="q">
+                        <input hidden="true" name="tbm" value="isch">
+                        <button type="submit" class="search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="button-group">
+                        <input type="submit" class="submit" value="Google Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

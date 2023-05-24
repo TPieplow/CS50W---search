@@ -1,0 +1,226 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px;
+    margin: 10px;
+}
+
+.search-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    padding: 20px;
+}
+
+input {
+    font-size: 16px;
+    width: 300px;
+    padding: 10px 0;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+}
+
+.input-group input[type="text"] {
+    padding-right: 40px;
+    background-color: white ;
+    margin: 0 0 0 1px;
+    border-radius: 30px;
+    border: 1px solid #e0e0e0;
+    width: 500px;
+    display: block;
+    padding: 13px;
+    outline: none;
+    padding-left: 40px;
+}
+
+.input-group .search-button {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.search-button i {
+    color: #808080;
+}
+
+.submit {
+    background-color: #f8f9fa ;
+    font-size: 14px;
+    width: 130px;
+    border-width: 0px;
+    border-radius: 5px;
+    margin: 10px; 
+}
+
+input[type=submit]:hover {
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+.img {
+    padding: 20px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #808080;
+    padding: 10px;
+}
+
+.span-image {
+    color: #4285f4;
+    font: 16px/16px arial, sans-serif;
+    position: absolute;
+    right: calc(50% - 136px); /*I had to use the calc function to make it render correctly on different browsers*/
+    top: calc(50% - 80px);
+    white-space: nowrap;
+}
+
+/*This section is for the advanced search*/
+.logo {
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+.appbar {
+    color: #d93025;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 52px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ebebeb;
+    margin-top: 26px;
+}
+
+.search-container {
+    width: 1370px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.search-text {
+    font-size: 100%;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.adv-sf {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+.search-text .text {
+    flex-basis: 600px;
+}
+
+.submit-button {
+    display: flex;
+    margin-left: 657px;
+    margin-top: 10px;
+}
+
+.adv-btn {
+    background-color: #4d90fe;
+    color: #fff;
+    box-shadow: none;
+    border: 1px solid #3079ed;
+    border-radius: 2px;
+    height: 30px;
+    width: 125px;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 10px;
+    margin-right: 15px;
+    padding: 0 12px;
+}
+
+.adv-btn:hover {
+    background-color: #2e5dab;
+}
+
+.search-text h5 {
+    font-size: 18px;
+}
+
+.instr {
+    width: 32%;
+    margin: 0 0 8px 1%;
+    color: #555;
+    font-size: 11px;
+    padding-left: 5px;
+    margin-left: flex;
+    margin-top: 10px;
+}
+
+.adv-label {
+    display: inline-block;
+    min-width: 167px;
+    vertical-align: middle;
+    width: 150px;
+    font-size: 13px;
+    color: #333;
+    white-space: pre;
+}
+
+.search-field {
+    width: 600px;
+    height: 25px;
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    padding: 1px 8px;
+    margin-top: 10px;
+}
+
+.search-field:focus {
+    outline: 1px solid #3079ed;
+    outline-offset: -2px;
+  }
+
+.submit-button {
+    margin-top: 10px;
+    margin-right: 405px;
+}
+
+.monospace {
+    color: #666;
+    font-family: monospace;
+    font-size: 11px;
+    white-space: pre;
+}

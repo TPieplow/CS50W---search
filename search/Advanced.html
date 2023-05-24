@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Ted Pieplow">
+        <!-- Set viewport width-->
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <!-- Link to CSS -->
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <title>Advanced Search</title>
+    </head>
+    <body>
+        <div class="logo"><img src="https://www.google.se/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" height="25" width="75"></div>
+        <div class="content">
+            <div class="header">
+                <div class="header-links">
+                    <a href="index.html">Google Search</a>
+                    <a href="images.html">Google Image</a>        
+                </div>
+            </div>
+                <label class="appbar">Advanced search</label>
+            <div class="border-bottom">
+            </div>
+
+            <!-- Input container -->
+                <form action="https://www.google.com/search" method="get">
+                    <div class="search-container">
+                      <div class="search-text">
+                        <div class="text">Find pages with ...</div>
+                        <div class="text">To do this in the search box</div>
+                      </div>
+                        <div class="search-fields">
+                          <div class="adv-sf">
+                            <label class="adv-label">all these words:</label>
+                            <input name="as_q" type="text" class="search-field">
+                            <div class="instr">Type the important words: <span class="monospace">tri-colour rat terrier</span></div>
+                          </div>
+                          <div class="adv-sf">
+                            <label class="adv-label">this exact word or phrase:</label>
+                            <input name="as_eqp" type="text" class="search-field">
+                            <div class="instr">Put exact words in quotes: <span class="monospace">"rat-terrier"</span></div>
+                          </div>
+                          <div class="adv-sf">
+                            <label class="adv-label">any of these words:</label>
+                            <input name="as_oq" type="text" class="search-field">
+                            <div class="instr">Type OR between all the words you want: <span class="monospace">miniature OR standard</span></div>
+                          </div>
+                          <div class="adv-sf">
+                            <label class="adv-label">none of these words:</label>
+                            <input name="as_eq" type="text" class="search-field">
+                            <div class="instr">Put a minus sign just before words that you don't want: <br><span class="monospace"> -rodent, -"Jack Russell"</span></div>
+                          </div>
+                        </div>
+                        <div class="submit-button">
+                          <input type="submit" class="adv-btn" value="Advanced Search">
+                        </div>
+                      </div>
+                </form>
+        </div>
+    </body>
+</html>
